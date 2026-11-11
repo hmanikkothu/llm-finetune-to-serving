@@ -79,7 +79,6 @@ SELECT venue FROM table_name_50 WHERE away_team = "essendon"
 ## What I'd try next
 
 - **Execution-based scoring:** insert sample rows into each schema and compare query results, so correct queries written differently are no longer counted as wrong.
-- **Few-shot baseline:** compare fine-tuning against a prompt with three solved examples, to measure how much fine-tuning adds over prompting.
 - **Rank sweep:** train with r = 8, 16, and 64 and compare accuracy and training time.
 - **Bigger model:** repeat with Qwen2.5-7B-Instruct on a 24 GB GPU.
 - **Quantized serving:** compare AWQ or GPTQ 4-bit serving against 16-bit for speed and accuracy.
